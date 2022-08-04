@@ -25,7 +25,7 @@ const SignUpForm = () => {
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
-  }
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -39,7 +39,7 @@ const SignUpForm = () => {
       if (user) {
         console.log(user);
         const userDocRef = await createUserDocumentFromAuth(user, { displayName });
-        setFormFields(defaultFormFields);
+        resetFormFields();
       }
       // console.log('added to db');
     } catch(error) {
