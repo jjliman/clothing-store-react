@@ -51,7 +51,7 @@ const SignUpForm = () => {
     }
     
   }
-  console.log(formFields);
+  // console.log(formFields);
 
   return (
     <div className='sign-up-container'>
