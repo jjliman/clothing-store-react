@@ -16,7 +16,7 @@ const defaultFormFields = {
 
 const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
-  const { displayName, email, password, confirmPassword } = formFields;
+  const { displayName, email, password, confirmPassword } = formFields;  
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -37,7 +37,9 @@ const SignUpForm = () => {
     try {
       const { user } = await createAuthUserFromEmailAndPassword(email, password);
       if (user) {
-        console.log(user);
+        // console.log(user);
+        // console.log('create document from signup');
+        // setTimeout(async ()=>{await createUserDocumentFromAuth(user, { displayName });}, 3000);
         const userDocRef = await createUserDocumentFromAuth(user, { displayName });
         resetFormFields();
       }
