@@ -9,6 +9,7 @@ import { signOutUser } from '../../utils/firebase/firebase.utils';
 import './navigation.styles.scss';
 
 const Navigation = () => {
+  console.log('rendering navbar');
   const { currentUser } = useContext(UserContext);
 
   // console.log(currentUser);

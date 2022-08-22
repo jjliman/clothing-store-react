@@ -40,7 +40,7 @@ const SignUpForm = () => {
         // console.log(user);
         // console.log('create document from signup');
         // setTimeout(async ()=>{await createUserDocumentFromAuth(user, { displayName });}, 3000);
-        const userDocRef = await createUserDocumentFromAuth(user, { displayName });
+         createUserDocumentFromAuth(user, { displayName });
         resetFormFields();
       }
       // console.log('added to db');
