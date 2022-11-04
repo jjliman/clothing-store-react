@@ -6,12 +6,12 @@ import Shop from "./routes/shop/shop.component";
 import Checkout from "./routes/checkout/checkout.component";
 
 const App = () => {
-  console.log('rendering APP');
+  // console.log('rendering APP');
   return (
     <Routes>
       <Route path='/' element={<Navigation />}>
         <Route index element={<Home />} />
-        <Route path='shop' element={<Shop />} />
+        <Route path='shop/*' element={<Shop />} />
         <Route path='auth' element={<Authentication />} />
         <Route path='checkout' element={<Checkout />} />
       </Route>
