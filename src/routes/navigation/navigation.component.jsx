@@ -1,5 +1,5 @@
 import { Fragment, useContext } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import { ReactComponent as CowLogo } from '../../assets/cow-svgrepo-com.svg';
 // import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg';
 
