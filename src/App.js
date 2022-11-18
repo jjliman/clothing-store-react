@@ -28,7 +28,7 @@ const App = () => {
         unsubscribe();
       }
     );
-  }, []); // dispatch is not going to change, so no need to put it in the dependency array even though linter complains
+  }, [dispatch]); // dispatch is not going to change, so no need to put it in the dependency array even though linter complains
   return (
     <Routes>
       <Route path='/' element={<Navigation />}>
